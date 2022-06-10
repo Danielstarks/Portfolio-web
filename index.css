@@ -38,7 +38,7 @@ img {
 }
 
 p {
-    color: black;
+    color: #000000;
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 2.5rem;
@@ -56,10 +56,31 @@ p {
     text-align: center;
 }
 
+.service-top p{
+    margin: .2rem;
+    padding: 100px;
+    text-align: justify center;
+    font-size: 1.4rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+    
+}
+.service-top p span{
+    color: crimson;
+    font-size: medium ;
+}
+
 .section-title span {
     color: crimson;
 }
 
+.icons{
+    margin: 50px;
+    
+    border-radius: 12px;
+    align-items: center;
+    
+}
 
 .cta {
     display: inline-block;
@@ -175,6 +196,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    
 }
 
 #services .services-item {
@@ -187,7 +209,7 @@ p {
     border-radius: 10px;
     background-image: url(img/fdt.jpg);
     background-size: cover;
-    margin: 10px 5%;
+    margin: 10px 10%;
     position: relative;
     z-index: 1;
     overflow: hidden;
