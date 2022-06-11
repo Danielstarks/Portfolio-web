@@ -38,7 +38,7 @@ img {
 }
 
 p {
-    color: black;
+    color: #000000;
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 2.5rem;
@@ -54,6 +54,20 @@ p {
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
+}
+
+.service-top p{
+    margin: .2rem;
+    padding: 100px;
+    text-align: justify center;
+    font-size: 1.4rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+    
+}
+.service-top p span{
+    color: crimson;
+    font-size: medium ;
 }
 
 .section-title span {
@@ -175,6 +189,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    
 }
 
 #services .services-item {
@@ -187,7 +202,7 @@ p {
     border-radius: 10px;
     background-image: url(img/fdt.jpg);
     background-size: cover;
-    margin: 10px 5%;
+    margin: 10px 10%;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -364,6 +379,56 @@ p {
     border: 7px solid crimson;
     z-index: -1;
 }
+#contact .contact {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact .contact-items{
+    width: 400px;
+}
+
+#contact .contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0 #0000002c;
+    transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+
+}
+
+#contact .icon {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#contact .contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom:5px ;
+}
+
+#contact .contact-info h2{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+
+
 @keyframes text_reveal_box {
 
     50% {
