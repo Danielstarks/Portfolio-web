@@ -62,7 +62,7 @@ input {
 
 .slide img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100vh;
 }
 
 #slide1:checked ~ .s1 {
@@ -83,12 +83,12 @@ input {
 
 @media screen and (max-width: 935px) {
   html {
-    width: 100vh;
+    max-width: 100%;
   }
 
   .slide img {
-    max-width: 100%;
-   max-height: 100%;
+    width: 100%;
+   height: 100%;
   }
 
   .content {
