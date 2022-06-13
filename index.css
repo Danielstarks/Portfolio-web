@@ -12,10 +12,16 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (max-width: 795px) {
-    html {
-        width: 100vh;
+@media screen and (max-width: 995px) {
+    html{
+        max-width: 100vh;
     }
+
+    #services{
+        max-width: 100vh;
+        height: 100%;
+    }
+
 }
 
 a {
@@ -182,18 +188,20 @@ p {
 }
 
 
-
+/*fase 1*/
 
 #services .services {
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
 
+
 }
 
-#services .service-bottom {
+#services .services-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,6 +212,7 @@ p {
 
 #services .services-item {
     flex-basis: 80%;
+    flex-wrap: wrap;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -218,6 +227,14 @@ p {
     position: relative;
     z-index: 1;
     overflow: hidden;
+}
+.section-title{
+    margin-top: 10%;
+}
+#services .services-bottom .services-item {
+
+    flex-basis: 45%;
+    margin: 2.5%;
 }
 
 #services .services-item::after {
@@ -239,7 +256,7 @@ p {
 
 }
 
-#services .service-item h2 {
+#services .services-item h2 {
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
@@ -247,14 +264,19 @@ p {
 
 }
 
-#services .service-item p {
+#services .services-item p {
     color: white;
     text-align: left;
 
 }
 
+/*faze 2 */
+
+
+
 #projects .projects {
     flex-direction: column;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
@@ -300,6 +322,7 @@ p {
 #projects .projects-info h1 {
     font-size: 4rem;
     font-weight: 500;
+    
 }
 
 #projects .projects-info h2 {
@@ -334,10 +357,36 @@ p {
     transform: .3s ease transform;
 }
 
+
+
 #projects .projects-item:hover .projects-img img {
     transform: scale(1.1);
 }
 
+
+#projects .projects-item {
+    flex-direction: row;
+} 
+#projects .projects-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+#projects .projects-item{
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    
+}
+
+#projects .all-projects .projects-info{
+    height: 100%;
+}
+#projects .all-projects .projects-img{
+    height: 100%;
+}
+
+/* fase 3*/
 #about .about {
 
     flex-direction: column-reverse;
@@ -395,23 +444,47 @@ p {
     z-index: -1;
 }
 
-#contact .contact{
+#about .about{
+    flex-direction: row;
+}
+
+#about .col-left{
+    width: 600px;
+    height: 400px;
+    padding-left: 60px ;
+}
+#about .about .col-left .about-img::after{
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid crimson; 
+}
+
+#about .col-right{
+    text-align: left;
+    padding: 30px;
+}
+
+#about .col-right h1{
+    text-align: left;
+
+}
+
+/*fase 4*/
+
+#contact .contact {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.contact-items{
-   display: flex;
-   flex-direction: column;
-   margin-inline:38% ;
-   margin-bottom: 10px;
-   justify-content: center;
-
+.contact-items {
+    margin-inline: 35%;
 }
 
 #contact .contact-items {
-    width: 300px;
+    width: 400px;
 }
 
 #contact .contact-item {
@@ -450,7 +523,38 @@ p {
     font-weight: 500;
 }
 
+#contact .contact{
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center; 
+    justify-content: center;
+    min-width: 20vh;
+    padding: 20px;
+    margin: 0;
+}
+
+#contact .contact-item {
+    margin: 20px;
+    flex-direction: row;
+}
+
+#contact .contact-item {
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .contact-item  .icon{
+height: 100px;
+width: 100px;
+}
+
+#contact .contact-item  .icon img{
+    object-fit: contain;
+}
+
 /* End footer*/
+
 
 #footer {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -463,7 +567,7 @@ p {
     min-height: 200px;
     flex-direction: column;
     text-align: center;
-margin-top: 50px;
+    margin-top: 5 0px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -528,10 +632,4 @@ margin-top: 50px;
         color: crimson;
         font-weight: 500;
     }
-}
-
-#services .services-bottom .services-item {
-
-    flex-basis: 45%;
-    margin: 2.5%;
 }
