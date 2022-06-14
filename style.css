@@ -118,7 +118,7 @@ p {
 
 }
 
-.header .nav-bar {
+#header .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -155,17 +155,72 @@ p {
     display:block
 }
 #header .nav-list ul a::after{
-    content: 'Text';
+    content: attr(data-after);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0);
     color: rgba(240, 248, 255, 0.021);
-    font-size: 15rem;
+    font-size: 13rem;
     letter-spacing: 50px;
-    z-index: 1;
+    z-index: -1;
+    transition: .3s ease letter-spacing;
 
 }
+#header .nav-list ul li:hover a::after{
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+}
+
+#header .hamburger{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+}
+#header .hamburger .bar{
+height: 2px;
+width: 30px;
+position: relative;
+background-color: white;
+z-index: -1;
+
+}
+
+#header .hamburger .bar::after,
+#header .hamburger .bar::before{
+content: '';
+position: absolute;
+height: 100%;
+width: 100%;
+left: 0;
+background-color: white;
+transition: .3s ease;
+transition-property: top, bottom;
+}
+#header .hamburger .bar::after{
+    top: 8px;
+}
+
+#header .hamburger .bar::before{
+    bottom: 8px;
+}
+
+#header .hamburger.active .bar::before{
+ bottom: 0;
+}
+
+#header .hamburger.active .bar::after{
+    top: 0;
+}
+
 /*conteudo principal*/
 #hero {
     background-image: url(img/fd.jpg);
