@@ -108,11 +108,11 @@ p {
     z-index: 1000;
     left: 0;
     top: 0;
-    width: 100vh;
+    width: 100vw;
     height: auto;
 }
 
-#header .header {
+#header .header{
     min-height: 8vh;
     background-color: rgba(31, 30, 30, 0.24);
 
@@ -133,9 +133,9 @@ p {
     list-style: none;
     position: absolute;
     background-color: rgb(31, 30, 30);
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
-    left: 0;
+    left: 100%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -144,6 +144,10 @@ p {
     z-index: 1;
     overflow: hidden;
 }
+#header .nav-list ul.active{
+    left: 0;
+} 
+
 #header .nav-list ul a{
     font-size: 2.5rem;
     font-weight: 500;
