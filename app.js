@@ -15,4 +15,4 @@ document .addEventListener('scroll' ,()=>{
     }else{
         header.style.backgraund = "trans"
     }
-} )
+} );
