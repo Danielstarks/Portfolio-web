@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -10,6 +13,57 @@ body {
   background: linear-gradient(72deg, rgb(20, 147, 220), rgb(18, 58, 77));
 }
 
+/*menu bar*/
+header{
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: centro;
+  justify-content: space-between;
+  padding: 35px 16%;
+  background: transparent;
+  transition: ease .40s;
+}
+
+.logo img{
+width: 140px;
+height: auto;
+}
+
+.navlist{
+  display: flex;
+}
+
+.navlist a{
+display: inline-block;
+color:#040000;
+font-size: 16px;
+font-weight: 500;
+letter-spacing:1px;
+padding: 10px 20px;
+margin: 0 5px;
+transition: all .40s ease;
+
+}
+
+.navlist a:hover{
+  background: #a32e37;
+  color: white;
+}
+
+#menu-icon{
+  color: #fff;
+  font-size: 40px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+
+
+}
+/*galeria*/
 .content {
   height: 520px;
   width: 935px;
