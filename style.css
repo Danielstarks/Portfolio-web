@@ -98,18 +98,46 @@ p {
 .brand h1 span {
   color: crimson;
 }
-.text-tecno{
-    margin: 10px;
-    font-size: 2rem;
-    text-transform: uppercase;
-    align-items: center;
-    color: crimson;
+
+/*logo tenologia*/
+#tecno .tecno{
+flex-direction: column;
+max-width: 1200px;
+margin: 0 auto;
+
 }
-.tec-icon {
-  width: 48px;
-  height: 48px;
-  margin: 5px;
+#tecno .tecno-items{
+  width: 400px;
+
+}
+#tecno .tecno-item{
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 0 #0000002c;
+  transition:  .3s ease box-shadow;
+
+}
+#tecno .tecno-item:hover{
+  box-shadow: 0px 0px 5px 0 crimson;
+}
+#tecno .icon{
+  width: 48px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#tecno .tecno-info h1{
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 /*Menu bar*/
@@ -550,7 +578,7 @@ p {
 }
 
 #contact .contact-item {
-  width: 80%;
+  min-width: 31%;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -569,7 +597,7 @@ p {
 }
 
 #contact .icon {
-  width: 70px;
+  width: 50px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -581,8 +609,8 @@ p {
 }
 
 #contact .contact-info h2 {
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
   font-weight: 500;
 }
 
@@ -677,7 +705,7 @@ p {
 
 /*Resposivo midia*/
 
-@media only screen and (min-width: 798px) {
+@media only screen and (min-width: 968px) {
   /*apresentação*/
   .cta {
     font-size: 2.5rem;
@@ -696,8 +724,44 @@ p {
     flex-basis: 45%;
     margin: 2.5%;
   }
+  /*tecnologia*/
+  #tecno .tecno {
+    flex-direction: colum;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
 
-  /*projetos q1*/
+  #tecno .tecno-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0;
+  }
+
+  #tecno .tecno-item {
+    margin: 20px;
+    flex-direction: row;
+  }
+
+  #tecno .tecno-items .icon {
+    height: 48px;
+    width: 48px;
+  }
+
+  #contact .contact-item .icon img {
+    object-fit: contain;
+  }
+
+  #tecno .tecno-item .tecno-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  /*projetos*/
   #projects .projects-item {
     flex-direction: row;
   }
@@ -772,11 +836,13 @@ p {
     flex-direction: row;
   }
 
+
   #contact .contact-items .icon {
     height: 100px;
     width: 100px;
   }
-
+  
+  
   #contact .contact-item .icon img {
     object-fit: contain;
   }
