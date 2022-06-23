@@ -274,7 +274,7 @@ margin: 0 auto;
   bottom: 8px;
 }
 
-#header .hamburger.active .bar:before {
+#header .hamburger.active .bar::before {
   bottom: 0;
 }
 
