@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body {
@@ -19,7 +19,7 @@ section {
   overflow: hidden;
 }
 section:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -55,5 +55,43 @@ section img {
   padding-top: 105px;
   text-transform: uppercase;
   letter-spacing: 12px;
-  font-family: 'Kaushan Script', sans-serif;
+  font-family: "Kaushan Script", sans-serif;
+}
+.ab-text {
+  padding: 100px 20%;
+}
+
+.heading {
+  text-align: center;
+}
+.heading h2 {
+  font-size: 40px;
+  color: white;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+.heading p{
+  color: #9bacc4;
+  font-size: 15px;
+  line-height: 28px;
+}
+.container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+grid-gap: 1.7rem;
+align-items: center;
+margin: 5rem;
+}
+.box{
+  height: 340px;
+  width: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: gray;
+  transition: all 0.8s;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

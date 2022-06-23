@@ -1,6 +1,6 @@
-let first = document.getElementByid("first");
-let last = document.getElementByid("last");
-let text = document.getElementByid("text");
+let first = document.getElementById("first");
+let last = document.getElementById("last");
+let text = document.getElementById("text");
 
 window.addEventListener('scroll', function(){
   var value = window.scrollY;
