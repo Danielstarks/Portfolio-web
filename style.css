@@ -623,7 +623,12 @@ margin: 0 auto;
 /* End footer*/
 
 #footer {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  max-width: 100%;
+  background-image: url(/img/gif.gif);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 #footer .footer-conteiner {
