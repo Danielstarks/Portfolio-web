@@ -142,6 +142,7 @@ margin: 0 auto;
 .tecno .section-title {
   margin-bottom: 20%;
 }
+
 /*Menu bar*/
 #header {
   position: fixed;
@@ -284,7 +285,7 @@ margin: 0 auto;
 
 /*conteudo principal*/
 #hero {
-  background-image: url(img/fd.jpg);
+  background-image: url(img/gif.gif);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -891,4 +892,11 @@ margin: 0 auto;
     flex-basis: 22%;
     margin: 2.5%;
   }
+}
+
+/*Responsivo*/
+@media only screen and (min-width:768px){
+ .bubbles{
+  min-width: 50%;
+ }
 }
