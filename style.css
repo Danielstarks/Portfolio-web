@@ -107,7 +107,11 @@ margin: 0 auto;
 }
 #tecno .tecno-items{
   width: 200px;
+
+  
+
   flex-wrap: wrap;
+  margin: 10px;
 }
 
 #tecno .tecno-item{
