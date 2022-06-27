@@ -1,8 +1,9 @@
 # Portfolio Web
-file:///home/danielstark/Imagens/Capturas%20de%20tela/Captura%20de%20tela%20de%202022-06-24%2017-16-15.png
 status: Desenvolvimento ⚠️
 
 ### Projetos | Divulgações | Contatos
+
+ ![header](https://user-images.githubusercontent.com/67829982/175988079-1d126fb4-a077-43dd-9eb8-069f3e657ba2.png)
 
 link para testar: https://portfolio-danielgomes.netlify.app/
 ## TECNOLOGIAS
