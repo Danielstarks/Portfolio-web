@@ -14,6 +14,10 @@
     flex-wrap: wrap;
 }
 
+.menu-mobile {
+    display: none;
+}
+
 header {
     background-color: white;
     padding: 20px 0;
@@ -103,6 +107,7 @@ section.main {
     border: 0;
     cursor: pointer;
 }
+
 .main_cta button:hover {
 
     background-color: #124265;
@@ -116,73 +121,161 @@ section.main {
     flex-wrap: wrap;
 }
 
-.diferencial-single{
+.diferencial-single {
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.904);
     width: 23%;
     margin-right: 2%;
     padding: 50px 20px;
 }
-.diferencial-single i{
+
+.diferencial-single i {
     color: #124265;
-    font-size: 23px ;
+    font-size: 23px;
 }
 
-.diferencial-single h2{
+.diferencial-single h2 {
     color: #124265;
     margin: 10px 0;
     font-size: 17px;
 }
 
-.diferencial-single p{
+.diferencial-single p {
     color: gray;
     font-size: 14px;
     line-height: 30px;
 
 }
-section.sobre{
+
+section.sobre {
     padding: 80px 0;
 }
 
-.chamada-sobre{
+.chamada-sobre {
     width: 100%;
     text-align: center;
 }
-.chamada-sobre h2{
+
+.chamada-sobre h2 {
     color: #124265;
     text-transform: uppercase;
 }
-.chamada-sobre p{
+
+.chamada-sobre p {
     font-size: 14px;
     color: gray;
     margin: 50px 0;
 }
-.conteudo-sobre{
+
+.conteudo-sobre {
     display: flex;
     flex-wrap: wrap;
 }
-.conteudo-sobre p{
+
+.conteudo-sobre p {
     width: 48%;
     margin-right: 2%;
     color: #444444;
 }
-.conteudo-sobre span{
+
+.conteudo-sobre span {
     display: inline-block;
     width: 100%;
     margin-top: 50px;
 }
-.conteudo-sobre i{
+
+.conteudo-sobre i {
     color: #007bff;
 }
 
-@media screen and (max-width: 768px){
-    .diferencial-single{
+/*Status */
+
+section.conquitas {
+    background-color: #f8fbfe;
+    padding: 20px 0;
+}
+
+.conquitas-single {
+    width: 22%;
+    margin-bottom: 3%;
+    text-align: center;
+   
+}
+
+.conquitas-single h2 {
+    font-size: 30px;
+}
+
+.menu-itens {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.menu-itens .button:hover {
+    color: #55f8eafd;
+}
+
+
+.menu-itens.show {
+    opacity: 1;
+  
+}
+
+.menu-itens.hidde {
+  opacity: 0;
+}
+
+.menu-itens a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+
+@media screen and (max-width: 868px) {
+    .diferencial-single {
         width: 100%;
         margin-bottom: 20px;
-        
-    }
-    
-    .conteudo-sobre p{width: 100%; margin: 30px 30px;}
 
-    section.main {width: 100%;}
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .menu-mobile {
+        width: 80%;
+        text-align: right;
+        display: block;
+
+    }
+
+    .menu-mobile i {
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+
+    }
+
+    .conteudo-sobre p {
+        width: 100%;
+        margin: 30px 30px;
+    }
+
+    section.main {
+        width: 100%;
+    }
 }
