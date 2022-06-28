@@ -7,7 +7,7 @@
 }
 
 :root {
-    --primary-color:#dc143c;
+    --primary-color:#ff7613;
     --text-color: #727171;
 }
 
@@ -42,6 +42,24 @@ a {
     font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
+}
+
+.tem_preTitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+
 }
 /*layouts*/
 .container {
@@ -117,6 +135,20 @@ margin-top: 1rem;
 .skill_list{
     margin-top: 1rem;
     margin-left: 2rem;
-    line-heigth:2;
+    line-height: 2;
+}
 
+/*Ref*/
+
+.ref_item{
+    margin-top: 2rem;
+}
+.ref_name{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/*education*/
+.edu_item{
+    margin-top: 15px;
 }
