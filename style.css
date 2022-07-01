@@ -417,6 +417,14 @@ p {
   overflow: hidden;
 }
 
+#services .img{
+  max-width: 100vh;
+  background-image: url(/img/gif6.gif);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
 #services .services-item::after {
   content: '';
   position: absolute;
@@ -759,11 +767,13 @@ p {
 
   /*tecnologia*/
   #tecno .tecno {
-    flex-direction: column;
+    min-width: 20vh;
     padding: 100px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 20vh;
+   
   }
 
   #tecno .section-title {
