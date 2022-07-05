@@ -1,9 +1,8 @@
 
 *{
-
     margin: 0;
     padding: 0;
-   
+    box-sizing: border-box;
 }
 
 #titulo{
@@ -37,6 +36,15 @@ color: rgb(255, 255, 255);
 margin-left: 5%;
 margin-top: 10%;
 justify-content: left;
+flex-wrap: wrap ;
+}
+@media only screen and(max-width: 768px) {
+    body{
+        max-width: 100vh;
+    }
+    .campo{
+        max-width: 10%;
+    }
 }
 
 input, select, textarea, button{
@@ -45,10 +53,11 @@ border-radius: 5px;
 }
 .campo{
     margin-bottom: 1rem;
+
 }
 .campo label{
 margin-bottom: 0.2em;
-color:rgb(243, 1, 1);
+color:rgb(240, 4, 4);
 display: block;
 }
 fieldset .grupo .campo{

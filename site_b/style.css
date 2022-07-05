@@ -51,11 +51,12 @@ header {
   color: #fff;
 }
 
-#menu-icons {
+#menu-icons{
   color: #fff;
   font-size: 40px;
   z-index: 10001;
   cursor: pointer;
+  display: none;
 }
 
 section {

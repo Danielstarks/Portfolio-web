@@ -10,7 +10,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: white;
+  background: rgb(18, 14, 22);
 }
 
 /*menu bar*/
@@ -24,7 +24,7 @@ body {
   align-items: centro;
   justify-content: space-between;
   padding: 30px 15%;
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.562);
   transition: ease .40s;
 }
 
@@ -39,7 +39,7 @@ height: 20px;
 
 .navlist a{
 display: inline-block;
-color:#040000;
+color:#fcf9f9;
 font-size: 16px;
 font-weight: 500;
 letter-spacing:1px;
@@ -50,7 +50,7 @@ transition: all .40s ease;
 }
 
 .navlist a:hover{
-  background: #a32e37;
+  background: url(/img/gif6.gif) center center;
   color: white;
 }
 
@@ -135,7 +135,7 @@ input {
   margin-left: -80%;
 }
 
-@media screen and (max-width: 935px) {
+@media only screen and (max-width: 935px) {
   html {
     max-width: 100%;
   }
