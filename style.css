@@ -9,6 +9,7 @@
 html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
+  background: linear-gradient(45deg, #070714, rgb(0, 0, 0));
 }
 
 a {
@@ -39,12 +40,13 @@ p {
   line-height: 2.5rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
+  color: white;
 }
 
 .section-title {
   font-size: 4rem;
   font-weight: 100;
-  color: black;
+  color: white;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -103,7 +105,7 @@ p {
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
-
+  color: white;
 }
 
 #tecno .tecno-items {
@@ -131,7 +133,7 @@ p {
 }
 
 #tecno .tecno-item:hover {
-  box-shadow: 0px 0px 5px 0 crimson;
+  box-shadow: 0px 0px 15px 0 crimson;
 }
 
 #tecno .icon {
@@ -154,10 +156,12 @@ p {
 #tecno h2 {
   font-size: 1.8rem;
   margin-bottom: 5%;
+
 }
 
 #tecno p {
   font-size: 1.8rem;
+  
 }
 
 /*Menu bar*/
@@ -188,7 +192,7 @@ p {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: rgb(31, 30, 30);
+  background-color: rgba(31, 30, 30, 0.911);
   width: 100vw;
   height: 100vh;
   left: 100%;
@@ -223,7 +227,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: rgba(240, 248, 255, 0.021);
+  color: rgba(240, 248, 255, 0.164);
   font-size: 13rem;
   letter-spacing: 50px;
   z-index: -1;
@@ -565,14 +569,16 @@ p {
   font-weight: 500;
   letter-spacing: 0.2rem;
   margin-bottom: 10px;
+  color: white;
 }
 
 #about .col-right p {
   margin-bottom: 20px;
+  color: white;
 }
 
 #about .col-right .cta {
-  color: black;
+  color: white;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;
@@ -606,6 +612,7 @@ p {
 
 #contact .contact-items {
   width: 400px;
+  gap: 5px;
 }
 
 #contact .contact-item {
@@ -624,7 +631,7 @@ p {
 }
 
 #contact .contact-item:hover {
-  box-shadow: 0px 0px 5px 0 crimson;
+  box-shadow: 0px 0px 15px 0 crimson;
 }
 
 #contact .icon {
@@ -637,6 +644,7 @@ p {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 5px;
+  color:white;
 }
 
 #contact .contact-info h2 {
@@ -644,7 +652,6 @@ p {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.2rem;
-
 }
 
 /* End footer*/
