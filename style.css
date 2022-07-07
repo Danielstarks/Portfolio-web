@@ -192,7 +192,7 @@ p {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
-  background-color: rgba(31, 30, 30, 0.911);
+  background-color: rgba(31, 30, 30, 0.61);
   width: 100vw;
   height: 100vh;
   left: 100%;
