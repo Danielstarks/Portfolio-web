@@ -12,7 +12,7 @@ html {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background: radial-gradient(rgb(46, 0, 4),10%, black);
+  background: radial-gradient(rgb(126, 5, 15),10%, black);
   position: relative;
 }
 
@@ -232,7 +232,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: rgba(243, 0, 20, 0.301);
+  color: rgba(243, 0, 20, 0.534);
   font-size: 13rem;
   letter-spacing: 50px;
   z-index: -1;
