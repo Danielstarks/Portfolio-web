@@ -310,13 +310,14 @@ p {
   top: 0;
 }
 
-/*conteudo principal*/
+/*conteúdo principal*/
 #hero {
-  background-image: url(img/gif.gif);
+  background-image: url(img/footer.gif);
   background-size: cover;
   background-position: top center;
-  position: relative;
   flex-wrap: wrap;
+  position: relative;
+  
   z-index: 1;
 }
 
@@ -328,7 +329,7 @@ p {
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -663,8 +664,10 @@ p {
 /* End footer*/
 
 #footer {
-  max-width: 100%;
-  background-image: url(/img/gif.gif);
+  min-width: 4vh;
+  min-height: 5vh;
+  padding-top: 60px ;
+  background-image: url(/img/footer2.gif);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -676,7 +679,7 @@ p {
   min-height: 200px;
   flex-direction: column;
   text-align: center;
-  margin-top: 5 0px;
+  margin-top: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
