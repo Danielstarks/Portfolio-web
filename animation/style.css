@@ -30,7 +30,7 @@ img{
 
 .hero{
 display: flex;
-max-width: 800vh;
+max-width: 800px;
 margin: 0 auto;
 flex-wrap: wrap;
 }
@@ -1728,3 +1728,31 @@ flex-wrap: wrap;
     transform: translateX(37vw) translateY(-49vh) scale(0.34);
   }
 }
+
+@keyframes drift {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flash {
+
+  0%,
+  30%,
+  100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw red;
+  }
+
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw red;
+  }
+}
+
+
+/*fim animation*/
