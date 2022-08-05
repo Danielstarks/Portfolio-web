@@ -1872,8 +1872,8 @@ p {
 }
 
 #tecno .icon {
-  min-width: 48px;
-  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
   margin: 0 auto;
 }
 
@@ -2396,8 +2396,8 @@ p {
 /* End footer*/
 
 #footer {
-  min-width: 4vh;
-  min-height: 5vh;
+  min-width: 30vh;
+  min-height: 25vw;
   padding-top: 60px ;
   background-image: url(/img/footer2.gif);
   background-size: cover;
@@ -2405,7 +2405,10 @@ p {
   position: relative;
   flex-wrap: wrap;
 }
-
+#footer img{
+  display: block;
+  max-width: 100%;
+}
 
 #footer .footer-conteiner {
   min-height: 200px;
