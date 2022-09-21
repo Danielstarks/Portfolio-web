@@ -31,6 +31,17 @@ body {
   height: 100vh;
 }
 
+#services .subText{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+}
+#services .subName{
+  font-size: 2rem;
+  font-weight: 100;
+}
+
 .firefly {
   position: fixed;
   left: 50%;
