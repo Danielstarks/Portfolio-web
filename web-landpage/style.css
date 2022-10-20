@@ -24,22 +24,54 @@ h1 {
   margin-bottom: 100px;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+#hero h2 {
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
+#hero p {
+  padding: 10px;
+  font-size: 15px;
+  color: #ccc;
+}
 
-.hero {
+img {
+  display: block;
+  max-width: 100%;
+
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
-.hero > div {
-  flex: 1 1 300px;
+.container .items {
+  background: radial-gradient(white, 20px,rgba(0, 0, 0, 0.397));
+  border: 1px solid rgba(255, 0, 0, 0.322);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
   margin: 30px;
+  
+}
+
+.items {
+  box-shadow: 0px 0px 18px 0 #721d1d2c;
+  transition: .3s ease box-shadow;
+}
+
+.items:hover {
+  box-shadow: 0px 0px 15px 0 crimson;
 }
 
 

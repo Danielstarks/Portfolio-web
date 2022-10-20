@@ -1885,22 +1885,23 @@ p {
 #tecno .icon {
   max-width: 48px;
   max-height: 48px;
+  align-items: center;
   margin: 0 auto;
 }
 
 #tecno .tecno-info h1 {
+  padding: 5px;
   font-size: 1.6rem;
   font-weight: 500;
-  margin-bottom: 5px;
-  text-align: left;
-  padding-left: 20px;
+  margin-top: 5px;
+  margin: 0 auto;
 }
 
 .tecno .section-title {
   margin-bottom: 20%;
 }
 
-#tecno h2 {
+#tecno h2{
   font-size: 1.8rem;
   margin-bottom: 5%;
 
@@ -2052,7 +2053,7 @@ p {
   top: 0;
 }
 
-/*conteúdo principal*/
+/*headeer*/
 #hero {
   width: 100%;
   height: 100%;
@@ -2129,7 +2130,7 @@ p {
   animation-delay: 2.5s;
 }
 
-/*fase 1*/
+/*Services*/
 
 #services .services {
   flex-direction: column;

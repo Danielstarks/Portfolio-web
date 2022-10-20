@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*Menu*/
 .center {
 
     max-width: 1100px;
@@ -25,13 +26,19 @@ header {
 }
 
 .logo {
-    color: #16507b;
+    color: #007bff;
 
 }
 
 .logo h2 {
     font-weight: normal;
     font-size: 22px;
+}
+
+span {
+    font-size: 25px;
+    font-weight: 900;
+    color: #007bff;
 }
 
 .menu {
@@ -41,10 +48,10 @@ header {
 
 .menu a {
     color: #124265;
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
-    margin-right: 20px;
-    transform: 0.4s;
+    margin-right: 30px;
+    transition: 0.4s;
 }
 
 .menu a:hover {
@@ -53,22 +60,22 @@ header {
 }
 
 .menu .btn-menu {
-    background-color: #007bff;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 800;
     display: inline-block;
     padding: 8px 16px;
-    color: white;
-    border-radius: 6px;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 20px;
 }
 
 .menu .btn-menu:hover {
-    background-color: #124265;
+    background-color: #007bff;
     color: white;
 }
 
-/*
-Section Main
-
-*/
+/*Header end Cards*/
 
 section.main {
     background-image: url(img/cap.webp);
@@ -87,30 +94,36 @@ section.main {
 
 .main_cta h2 {
 
-    color: #1650b7;
-    font-size: 40px;
+    color: #008cff;
+    font-size: 45px;
+    font-weight: 800;
 }
 
 .main_cta p {
     color: white;
     font-size: 19px;
+    font-weight: 700;
     margin: 10px 0;
 
 }
 
 .main_cta button {
     background-color: #007bff;
+    font-size: 15px;
+    font-weight: 800;
     display: inline-block;
-    padding: 8px 30px;
+    padding: 9px 30px;
     color: white;
-    border-radius: 6px;
+    border-radius: 20px;
     border: 0;
     cursor: pointer;
+    transition: .4s;
 }
 
 .main_cta button:hover {
-
-    background-color: #124265;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
 }
 
 
@@ -146,6 +159,8 @@ section.main {
     line-height: 30px;
 
 }
+
+/*About*/
 
 section.sobre {
     padding: 80px 0;
@@ -199,7 +214,7 @@ section.conquitas {
     width: 22%;
     margin-bottom: 3%;
     text-align: center;
-   
+
 }
 
 .conquitas-single h2 {
@@ -213,33 +228,39 @@ section.conquitas {
     width: 100%;
     text-align: center;
     background-color: white;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #008cff;
     display: block;
     opacity: 0;
     transition: 1s;
 }
 
+/*Menu Mobile*/
 
 .menu-itens .button:hover {
-    color: #55f8eafd;
+   
+    color: #008cff;
 }
 
 
 .menu-itens.show {
     opacity: 1;
-  
+
 }
 
 .menu-itens.hidde {
-  opacity: 0;
+    opacity: 0;
 }
 
 .menu-itens a {
     display: block;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
-    color: blue;
+    margin-bottom: 5px;
+    color: #124265;
 }
 
+/*Resposive mobile*/
 
 @media screen and (max-width: 868px) {
     .diferencial-single {
